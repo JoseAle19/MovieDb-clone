@@ -1,0 +1,398 @@
+{
+    "page": 2,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/w2uGvCpMtvRqZg6waC1hvLyZoJa.jpg",
+        "genre_ids": [
+          10749,
+          18
+        ],
+        "id": 696374,
+        "original_language": "en",
+        "original_title": "Gabriel's Inferno",
+        "overview": "El enigmático y atractivo profesor Gabriel Emerson, reconocido especialista en Dante, es un hombre torturado por su pasado y orgulloso del prestigio que ha conseguido, aunque también es consciente de que es un imán para el pecado y, en especial, para la lujuria.",
+        "popularity": 13.864,
+        "poster_path": "/oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg",
+        "release_date": "2020-05-29",
+        "title": "Gabriel's Inferno",
+        "video": false,
+        "vote_average": 8.5,
+        "vote_count": 2350
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/ejnlCzBd5pOGAYCpxC93NXSrdrz.jpg",
+        "genre_ids": [
+          35,
+          14
+        ],
+        "id": 772071,
+        "original_language": "es",
+        "original_title": "Cuando Sea Joven",
+        "overview": "Cuando Sea Joven es una película mexicana producida en 2021. Fue dirigida por Raúl Martínez y contó con la actuación de Verónica Castro, Michael Ronda, Natasha Dupeyrón, Edgar Vivar, Eduardo Santamarina.",
+        "popularity": 17.482,
+        "poster_path": "/6gIJuFHh5Lj4dNaPG3TzIMl7L68.jpg",
+        "release_date": "2022-09-14",
+        "title": "Cuando Sea Joven",
+        "video": false,
+        "vote_average": 8.5,
+        "vote_count": 253
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/4HodYYKEIsGOdinkGi2Ucz6X9i0.jpg",
+        "genre_ids": [
+          16,
+          28,
+          12,
+          878
+        ],
+        "id": 569094,
+        "original_language": "en",
+        "original_title": "Spider-Man: Across the Spider-Verse",
+        "overview": "Miles Morales regresa para una aventura épica que transportará al amigable vecino de Brooklyn Spider-Man a través del Multiverso para unir fuerzas con Gwen Stacy y un nuevo equipo de Spider-People, y enfrentarse así a un villano mucho más poderoso que cualquier cosa que hayan conocido antes.",
+        "popularity": 935.559,
+        "poster_path": "/qqXTerrQYwg9pIMhb1GFbxa3WUz.jpg",
+        "release_date": "2023-05-31",
+        "title": "Spider-Man: Cruzando el Multiverso",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 2662
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uif5fUshJrXyyDzfpzp1DLw3N0S.jpg",
+        "genre_ids": [
+          27,
+          18,
+          53
+        ],
+        "id": 539,
+        "original_language": "en",
+        "original_title": "Psycho",
+        "overview": "Una joven secretaria, tras cometer un robo, se marcha de la ciudad y conduce durante horas, parando para descansar en un pequeño motel de carretera regentado por un joven llamado Norman. Todo parece normal y tranquilo en el apartado motel y en la casa de al lado en la que viven Norman y su madre pero, mientras está en la ducha, la joven es asesinada salvajemente a cuchilladas.",
+        "popularity": 54.772,
+        "poster_path": "/bpBJXvgGDG52XJJrVSl4zxfIsU9.jpg",
+        "release_date": "1960-06-22",
+        "title": "Psicosis",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 9120
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hZkgoQYus5vegHoetLkCJzb17zJ.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 550,
+        "original_language": "en",
+        "original_title": "Fight Club",
+        "overview": "Un joven sin ilusiones lucha contra su insomnio, consecuencia quizás de su hastío por su gris y rutinaria vida. En un viaje en avión conoce a Tyler Durden, un carismático vendedor de jabón que sostiene una filosofía muy particular: el perfeccionismo es cosa de gentes débiles; en cambio, la autodestrucción es lo único que hace que realmente la vida merezca la pena. Ambos deciden entonces formar un club secreto de lucha donde descargar sus frustaciones y su ira que tendrá un éxito arrollador.",
+        "popularity": 80.29,
+        "poster_path": "/1yWmCAIGSVNuTOGyz9F48W9g1Ux.jpg",
+        "release_date": "1999-10-15",
+        "title": "El club de la lucha",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 26894
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aVFx1VtlOxR3v0ADEatalXOvwbu.jpg",
+        "genre_ids": [
+          16,
+          14,
+          28
+        ],
+        "id": 620249,
+        "original_language": "zh",
+        "original_title": "罗小黑战记",
+        "overview": "Durante generaciones, los humanos han creído que los demonios eran leyendas, sin saber que realmente coexisten con nosotros. Hei es un gato demonio que ha vivido siempre feliz en los bosques de las montañas, hasta que la expansión de la ciudad acaba destruyendo su propio hogar. En ese momento, Hei comienza a vagar por el mundo buscando un nuevo lugar en el que cobijarse.  Una película precuela de la serie web Luo Xiao Hei Zhan Ji. Los espectadores descubrirán cómo Xiao Hei obtuvo el apellido Luo. También se espera que el episodio 28 de la serie sea lanzado justo antes de que la película se transmita en los cines después de un paréntesis de 2 años.",
+        "popularity": 11.032,
+        "poster_path": "/4efytN4Bki4VlqnAMjsWdEGj4Sb.jpg",
+        "release_date": "2019-08-27",
+        "title": "La leyenda de Hei",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 299
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/3RMLbSEXOn1CzLoNT7xFeLfdxhq.jpg",
+        "genre_ids": [
+          10749,
+          16
+        ],
+        "id": 372754,
+        "original_language": "ja",
+        "original_title": "同級生",
+        "overview": "Sajô y Kusakabe son más o menos igual de altos, tienen la misma edad y van a la misma clase. Por lo demás, no puede decirse que tengan mucho en común. Kusakabe, de carácter inquieto y despreocupado, toca en un grupo de rock con sus amigos y deja pasar los días sin pensar mucho en el futuro. Sajô, en cambio, es un alumno modélico que no termina de encajar en ese instituto de macarras, al que nadie sabe muy bien cómo fue a parar. Un día, Kusakabe se da cuenta de que su compañero no canta en los ensayos del coro para intentar disimular su falta de oído musical, así que se ofrece a darle unas lecciones. Entre refrescos compartidos bajo el sol de verano, nace entre ellos un amor de adolescencia que crecerá con el devenir de las estaciones. De la mano, compartiendo sinsabores y alegrías, ambos se encaminarán hacia el final de sus días de instituto y el comienzo de la vida adulta.",
+        "popularity": 11.912,
+        "poster_path": "/7byisQANRFHf9SC60n5PaLywuMa.jpg",
+        "release_date": "2016-02-20",
+        "title": "En la misma clase",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 315
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wxoxxA9oINGVI4vJWYnDId6oRMv.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 311,
+        "original_language": "en",
+        "original_title": "Once Upon a Time in America",
+        "overview": "David Aaronson \"Noodles\", un pobre joven judío, conoce en los suburbios de principios del siglo XX de Manhattan, Nueva York, a Maximilian Bercovicz \"Max\", otro joven de origen hebreo dispuesto a llegar lejos por cualquier método. Entablan una gran amistad y forman, con los 3 colegas de \"Noodles\", Patrick Goldberg \"Patsy\", Philip Stein \"Cockeye\", y Dominic una banda que prospera rápidamente. Desgraciadamente, son perseguidos por Bugsy, el tipo para el que Noodles y sus amigos trabajaban anteriormente, y en uno de sus asaltos, mata a Dominic. Rápidamente Noodles se tira encima suyo y le mata, por lo que pasará 12 años en prisión. Cuando Noodles sale de prisión le recibe Max, que sigue con su banda junto a los otros 2 amigos, Patsy y Cockeye. Rápidamente, entre los 4, llegan a convertirse, en tiempos de la prohibición, en unos de los mayores gánsteres de todo el país.",
+        "popularity": 33.124,
+        "poster_path": "/u4VnqaxINtKVscmdldZsBojU6jm.jpg",
+        "release_date": "1984-05-23",
+        "title": "Érase una vez en América",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 4770
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uBZQOYZLIU9dBmd62fdzBAoropu.jpg",
+        "genre_ids": [
+          28,
+          12,
+          16,
+          18
+        ],
+        "id": 704264,
+        "original_language": "en",
+        "original_title": "Primal: Tales of Savagery",
+        "overview": "Primal: Tales of Savagery, de Genndy Tartakovsky, presenta a un hombre de las cavernas y un dinosaurio al borde de la extinción. Unida por la tragedia, esta amistad improbable se convierte en la única esperanza de supervivencia.",
+        "popularity": 59.546,
+        "poster_path": "/9NBBkdxH0TjQEBSN2AzeE1sgsF9.jpg",
+        "release_date": "2019-11-21",
+        "title": "Primal: Tales of Savagery",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 281
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jtAI6OJIWLWiRItNSZoWjrsUtmi.jpg",
+        "genre_ids": [
+          10749,
+          18
+        ],
+        "id": 724089,
+        "original_language": "en",
+        "original_title": "Gabriel's Inferno: Part II",
+        "overview": "Basado en la novela más vendida de Sylvain Reynard, el profesor Gabriel Emerson se ha embarcado en un apasionado pero clandestino romance con su antigua alumna, Julia Mitchell.",
+        "popularity": 16.885,
+        "poster_path": "/8Rxutea68d940kg44Box5gFmKcF.jpg",
+        "release_date": "2020-07-31",
+        "title": "Gabriel's Inferno: Part II",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 1480
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bxSBOAD8AuMHYMdW3jso9npAkgt.jpg",
+        "genre_ids": [
+          10751,
+          18
+        ],
+        "id": 667257,
+        "original_language": "es",
+        "original_title": "Cosas imposibles",
+        "overview": "La vida es tan curiosa e impredecible que, a veces, uno encuentra la felicidad donde menos lo espera. Matilde es una mujer que, tras la muerte de su esposo –un hombre que abusó de ella constantemente–, encuentra a su nuevo gran amigo en Miguel, su vecino joven, inseguro, desorientado y hasta dealer..",
+        "popularity": 11.152,
+        "poster_path": "/eaf7GQj0ieOwm08rrvjJQNbN0kN.jpg",
+        "release_date": "2021-06-17",
+        "title": "Cosas imposibles",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 342
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/5p3aTxtUtZHCHwYsuycutmxIhND.jpg",
+        "genre_ids": [
+          18,
+          80
+        ],
+        "id": 598,
+        "original_language": "pt",
+        "original_title": "Cidade de Deus",
+        "overview": "Basada en hechos reales, cuenta la historia del crecimiento del crimen organizado en los suburbios de la ciudad de Río de Janeiro, desde finales de los años sesenta hasta el comienzo de los ochenta, cuando el tráfico de drogas y la violencia impusieron su ley entre la miseria de las favelas.“Buscapé” tiene 11 años y es sólo un niño más en Cidade de Deus, un suburbio de Río de Janeiro. Tímido y delicado, observa a los niños duros de su barrio, sus robos, sus peleas, sus enfrentamientos diarios con la policía. Ya sabe lo que quiere ser si consigue sobrevivir: fotógrafo. “Dadinho”, un niño de su misma edad, se traslada al barrio. Sueña con ser el criminal más peligroso de Río de Janeiro y empieza su aprendizaje haciendo recados para los delincuentes locales. Dos vidas paralelas en Cidade de Deus.",
+        "popularity": 37.624,
+        "poster_path": "/2MztAexSbCVszezV0bKMKZPJAZf.jpg",
+        "release_date": "2002-08-30",
+        "title": "Ciudad de Dios",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 6593
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nC3IjYhUgZWgfKfFX0ygMigFwgc.jpg",
+        "genre_ids": [
+          28,
+          18,
+          36
+        ],
+        "id": 14537,
+        "original_language": "ja",
+        "original_title": "切腹",
+        "overview": "Un samurái pide permiso para practicarse el Seppuku (o Harakiri), ceremonia durante la cual se quitará la vida abriéndose el estómago al tiempo que otro samurái lo decapitará. Solicita también poder contar la historia que le ha llevado a tomar tan trágica decisión.",
+        "popularity": 13.268,
+        "poster_path": "/rnYgzVuPaeKnZ85XJlukxmlFcrN.jpg",
+        "release_date": "1962-09-15",
+        "title": "Harakiri",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 811
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qUq3QTr2KLvGIcN0GaaaYx9bbyH.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 510,
+        "original_language": "en",
+        "original_title": "One Flew Over the Cuckoo's Nest",
+        "overview": "Randle McMurphy (Jack Nicholson), un violador de espíritu libre, que vive contracorriente, es recluido en un hospital psiquiátrico. La inflexible disciplina del centro acentúa su contagiosa tendencia al desorden, que acabará desencadenando una guerra entre los pacientes y el personal de la clínica con la fría y severa enfermera Ratched (Louise Fletcher) a la cabeza. La suerte de cada paciente del pabellón está en juego.",
+        "popularity": 39.148,
+        "poster_path": "/yU7bnfzfhZoxkZRcJfTbhxfFJhg.jpg",
+        "release_date": "1975-11-19",
+        "title": "Alguien voló sobre el nido del cuco",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 9526
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/fQq1FWp1rC89xDrRMuyFJdFUdMd.jpg",
+        "genre_ids": [
+          10749,
+          18
+        ],
+        "id": 761053,
+        "original_language": "en",
+        "original_title": "Gabriel's Inferno: Part III",
+        "overview": "",
+        "popularity": 27.836,
+        "poster_path": "/fYtHxTxlhzD4QWfEbrC1rypysSD.jpg",
+        "release_date": "2020-11-19",
+        "title": "El infierno de Gabriel Parte 3",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 1022
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/pbrkL804c8yAv3zBZR4QPEafpAR.jpg",
+        "genre_ids": [
+          12,
+          18,
+          878
+        ],
+        "id": 157336,
+        "original_language": "en",
+        "original_title": "Interstellar",
+        "overview": "Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.",
+        "popularity": 168.696,
+        "poster_path": "/nrSaXF39nDfAAeLKksRCyvSzI2a.jpg",
+        "release_date": "2014-11-05",
+        "title": "Interstellar",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 32070
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jBIMZ0AlUYuFNsKbd4L6FojWMoy.jpg",
+        "genre_ids": [
+          16,
+          35,
+          10749
+        ],
+        "id": 820067,
+        "original_language": "ja",
+        "original_title": "映画 五等分の花嫁",
+        "overview": "Como tutor a tiempo parcial, a Fuutarou se le asigna la tarea de guiar a las cinco hermosas chicas, que están “a punto de suspender” y “odian los estudios”, hasta la “graduación”. Fuutarou se esfuerza por preparar el festival escolar mientras vigila los estudios de Ichika, que ha decidido tomarse una licencia para concentrarse en la actuación, y Yotsuba está aún más decidida que de costumbre a que sea un festival escolar sin remordimientos.  Fuutarou se siente animado por la decisión de Itsuki de no rendirse, y busca respuestas a los sentimientos de Nino, la determinación de Miku y sus sentimientos por Ichika, Yotsuba e Itsuki. Con cada uno de ellos con sus propios pensamientos y sentimientos, el primer día del festival escolar, el último evento de su vida en el instituto, finalmente comenzó. “Ven al salón de clases a las 15:00, el primer día del festival escolar”. Las quintillizas se reúnen en el aula y Fuutarou finalmente les informa que tomará una decisión…",
+        "popularity": 93.756,
+        "poster_path": "/6QsExD8uP3vLk64yLnxD8MSS4A6.jpg",
+        "release_date": "2022-05-20",
+        "title": "Las Quintillizas: La Película",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 315
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/qGQf2OHIkoh89K8XeKQzhxczf96.jpg",
+        "genre_ids": [
+          28,
+          12,
+          16,
+          878
+        ],
+        "id": 324857,
+        "original_language": "en",
+        "original_title": "Spider-Man: Into the Spider-Verse",
+        "overview": "En un universo paralelo donde Peter Parker ha muerto, un joven de secundaria llamado Miles Morales es el nuevo Spider-Man. Sin embargo, cuando el líder mafioso Wilson Fisk (a.k.a Kingpin) construye el \"Super Colisionador\" trae a una versión alternativa de Peter Parker que tratará de enseñarle a Miles como ser un mejor Spider-Man. Pero no será el único Spider Man en entrar a este universo:  4 versiones alternas de Spider-Man aparecerán y buscarán regresar a su universo antes de que toda la realidad se colapse.",
+        "popularity": 192.938,
+        "poster_path": "/xRMZikjAHNFebD1FLRqgDZeGV4a.jpg",
+        "release_date": "2018-12-06",
+        "title": "Spider-Man: Un nuevo universo",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 13689
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nv5wwZou159v5OC61i4ElR7OqyY.jpg",
+        "genre_ids": [
+          14,
+          16,
+          12
+        ],
+        "id": 4935,
+        "original_language": "ja",
+        "original_title": "ハウルの動く城",
+        "overview": "Sophie es una joven de 18 años que trabaja sin descanso en la tienda de sombreros de la familia. En uno de sus frecuentes paseos conoce al enigmático mago Howl, lo que despierta la ira de la Bruja del Páramo, que odia a Howl con todas sus fuerzas. Cuando Sophie vuelve a la tienda, la Bruja se hace pasar por una clienta para acercarse a ella y lanzarle un hechizo… ¡que convierte a Sophie en una anciana de 90 años! Sophie, que no puede revelar su auténtica identidad, recurre a Howl para buscar una solución a su problema. Para ello se embarca en un viaje fantástico en el castillo ambulante del mago, habitado por personajes de lo más curioso. Sophie necesita ayuda pero quizás sea Howl el que realmente está en apuros.",
+        "popularity": 76.221,
+        "poster_path": "/p8EARnEw8KPZzlZg3vkseYVMczu.jpg",
+        "release_date": "2004-09-09",
+        "title": "El castillo ambulante",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 8513
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tqj7NKj11keFuLzPsBDMUq2dOUO.jpg",
+        "genre_ids": [
+          12,
+          14,
+          28
+        ],
+        "id": 120,
+        "original_language": "en",
+        "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+        "overview": "En la Tierra Media, el Señor Oscuro Saurón creó los Grandes Anillos de Poder, forjados por los herreros Elfos. Tres para los reyes Elfos, siete para los Señores Enanos, y nueve para los Hombres Mortales. Secretamente, Saurón también forjó un anillo maestro, el Anillo Único, que contiene en sí el poder para esclavizar a toda la Tierra Media. Con la ayuda de un grupo de amigos y de valientes aliados, Frodo emprende un peligroso viaje con la misión de destruir el Anillo Único. Pero el Señor Oscuro Sauron, quien creara el Anillo, envía a sus servidores para perseguir al grupo. Si Sauron lograra recuperar el Anillo, sería el final de la Tierra Media.",
+        "popularity": 101.475,
+        "poster_path": "/9xtH1RmAzQ0rrMBNUMXstb2s3er.jpg",
+        "release_date": "2001-12-18",
+        "title": "El señor de los anillos: La comunidad del anillo",
+        "video": false,
+        "vote_average": 8.4,
+        "vote_count": 23053
+      }
+    ],
+    "total_pages": 567,
+    "total_results": 11336
+  }

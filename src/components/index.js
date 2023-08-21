@@ -1,0 +1,10 @@
+export { Card } from "./Card";
+export { CardMovie } from "./CardMovie";
+export { CardMovieAbout } from "./CardMovieAbout";
+export { InformationOption } from "./InformationOptions";
+export { ModalMovie } from "./ModalMovie";
+export { NavBar } from "./NavBar";
+export { ProgressBar } from "./ProgressBar";
+export { SearchMovieAndtitle } from "./SearchMovieAndTitle";
+export { Switch } from "./Switch";
+export { Trending } from "./Trending";

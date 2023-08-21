@@ -1,0 +1,110 @@
+.loader {
+    color: #fff;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 78px;
+    /* opacity: 0.8; */
+}
+
+.loader:before {
+    color: black;
+    content: "{";
+    display: inline-block;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+
+}
+
+.loader:after {
+    color: black;
+    content: "}";
+    display: inline-block;
+    animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+/* Estilos para la barra de desplazamient  */
+.scroll-visible::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #000000;
+    /* or add it to the track */
+    /* display: none; */
+}
+
+.scroll-visible::-webkit-scrollbar-thumb {
+    height: 200px;
+    height: 200px;
+    background-color: #ffffff;
+}
+
+/* Aca termina los estilos de la barra */
+
+.gradient-text {
+    background: linear-gradient(to right, #c0fecf 0, #1ed5a9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-images {
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0px 35px 0 -5px #aaa, 0 -5px 0 0px #ddd, 0 -25px 0 -5px #fff,
+      -25px -30px 0 0px #ddd, -25px 30px 0 0px #ddd, 25px -30px 0 0px #ddd,
+      25px 30px 0 0px #ddd, 20px 10px 0 5px #ddd, 20px -10px 0 5px #ddd,
+      -20px -10px 0 5px #ddd, -20px 10px 0 5px #ddd;
+  }
+  .loader-images:after,
+  .loader-images:before {
+    content: "";
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    position: absolute;
+    border: 4px dashed #fff;
+    bottom: -4px;
+    transform: rotate(0deg);
+    box-sizing: border-box;
+    animation: tape 4s linear infinite;
+  }
+  .loader-images:before {
+    right: 0;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 34px #000;
+  }
+  .loader-images:after {
+    left: 0;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 65px #000;
+  }
+  
+  @keyframes tape {
+    0% {
+      transform: rotate(0deg) scale(0.4);
+    }
+    100% {
+      transform: rotate(-360deg) scale(0.4);
+    }
+  }
+        

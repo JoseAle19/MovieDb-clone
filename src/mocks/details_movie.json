@@ -1,0 +1,75 @@
+{
+  "adult": false,
+  "backdrop_path": "/rLb2cwF3Pazuxaj0sRXQ037tGI1.jpg",
+  "belongs_to_collection": null,
+  "budget": 100000000,
+  "genres": [
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 36,
+      "name": "Historia"
+    }
+  ],
+  "homepage": "",
+  "id": 872585,
+  "imdb_id": "tt15398776",
+  "original_language": "en",
+  "original_title": "Oppenheimer",
+  "overview": "Película sobre el físico J. Robert Oppenheimer y su papel como desarrollador de la bomba atómica. Basada en el libro 'American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer' de Kai Bird y Martin J. Sherwin.",
+  "popularity": 810.697,
+  "poster_path": "/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg",
+  "production_companies": [
+    {
+      "id": 9996,
+      "logo_path": "/3tvBqYsBhxWeHlu62SIJ1el93O7.png",
+      "name": "Syncopy",
+      "origin_country": "GB"
+    },
+    {
+      "id": 33,
+      "logo_path": "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
+      "name": "Universal Pictures",
+      "origin_country": "US"
+    },
+    {
+      "id": 507,
+      "logo_path": "/aRmHe6GWxYMRCQljF75rn2B9Gv8.png",
+      "name": "Atlas Entertainment",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2023-07-19",
+  "revenue": 649000000,
+  "runtime": 181,
+  "spoken_languages": [
+    {
+      "english_name": "Dutch",
+      "iso_639_1": "nl",
+      "name": "Nederlands"
+    },
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "El mundo cambia para siempre.",
+  "title": "Oppenheimer",
+  "video": false,
+  "vote_average": 8.287,
+  "vote_count": 1949
+}
