@@ -11,7 +11,7 @@ export const CardMovieAbout = ({
 }) => {
   return (
     <section className="w-full h-full flex  p-2 gap-5">
-      <div className="w-[30%]  h-[80%] animate-fadeIn">
+      <div className="w-[30%] animate-fadeIn">
         <img
           className="object-cover w-full h-full rounded-md"
           src={`${addPoster({ keyImg: movie?.backdrop_path })}`}

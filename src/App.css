@@ -32,7 +32,7 @@
 .scroll-visible::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-    background: #000000;
+    background: transparent;
     /* or add it to the track */
     /* display: none; */
 }
@@ -40,7 +40,7 @@
 .scroll-visible::-webkit-scrollbar-thumb {
     height: 200px;
     height: 200px;
-    background-color: #ffffff;
+    background-color: #e4e3e3;
 }
 
 /* Aca termina los estilos de la barra */

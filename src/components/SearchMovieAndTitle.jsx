@@ -12,19 +12,19 @@ export const SearchMovieAndtitle = ({ imageIndex }) => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
         }}
-        className="relative h-72 flex flex-col justify-center items-center "
+        className="flex flex-col justify-center items-center animate-fadeIn"
       >
-        <div className="w-full h-full  absolute top-0 left-0  backdrop-blur-0 bg-sky-950/70"></div>
+        <div className="  w-full h-full  backdrop-blur-0 bg-sky-950/60"></div>
 
-        <div className="w-11/12 absolute">
-          <p className="text-white font-extrabold text-4xl">Bienvenidos.</p>
+        <div className=" mx-5 md:my-10 xl:my-10 ">
+          <p className="text-white font-extrabold text-[45px] md:text-4xl">Bienvenidos.</p>
           <span className="text-white font-bold text-3xl">
             Millones de películas, programas de televisión y personas por
             descubrir. Explora ahora.
           </span>
-          <div className="w-full h-12  rounded-full bg-white flex justify-between mt-10">
+          <div className=" rounded-full bg-white flex justify-between my-10">
             <input
-              className="w-full outline-none ml-10 bg-transparent"
+              className="w-full outline-none ml-10  bg-transparent p-2"
               type="text"
               placeholder="Avengers, Barbie, Oppenh..."
             />

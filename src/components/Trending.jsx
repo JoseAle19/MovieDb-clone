@@ -37,11 +37,11 @@ export const Trending = ({ typeTitle, openModal }) => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
           }}
-          className="w-full   flex flex-col justify-center items-center   "
+          className="w-full my-5 flex flex-col justify-center items-center   "
         >
-          <div className="w-full h-auto relative">
+          <div className="w-full  relative">
             <div className="m-2 flex gap-6  items-center  mb-4  ">
-              <p className="ml-2 md:ml-12 xl:ml-12  text-2xl font-bold">{typeTitle}</p>
+              <p className=" md:ml-12 xl:ml-12  text-2xl font-bold">{typeTitle}</p>
               <Switch
                 setToday={setToday}
                 setWeek={setWeek}
