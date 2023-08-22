@@ -7,13 +7,12 @@ export const CardMovie = ({ movie, loading }) => {
     return (
       <div
         key={movie.id}
-        className=" flex flex-col relative  justify-between  hover:cursor-pointer  
-  "
+        className="flex flex-col relative  justify-between  hover:cursor-pointer hover:scale-95 duration-300"
       >
         <div className="w-36 relative ">
           <img
             loading="lazy"
-            className="object-cover rounded-xl w-64 h-56"
+            className="object-cover rounded-xl w-64 h-56 "
             src={`${
               loading === undefined
                 ? NO_IMAGE

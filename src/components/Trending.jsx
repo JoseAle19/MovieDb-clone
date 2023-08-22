@@ -37,7 +37,7 @@ export const Trending = ({ typeTitle, openModal }) => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "bottom",
           }}
-          className="w-full my-5 flex flex-col justify-center items-center   "
+          className="w-full  my-5 flex flex-col justify-center items-center   "
         >
           <div className="w-full  relative">
             <div className="m-2 flex gap-6  items-center  mb-4  ">

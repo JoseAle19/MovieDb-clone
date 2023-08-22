@@ -13,34 +13,46 @@ import Modal from "react-modal";
 import { useState } from "react";
 import { getMovies } from "./services/movies";
 import { Popular } from "./components/Popular";
+import { MoviesSearch } from "./components/MoviesSearch";
+
+// debouncer
+import debounce from "just-debounce-it";
 
 export const App = () => {
   const { imageIndex } = useRandomimage();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedMovie, setSelectedMovie] = useState(null);
-   Modal.setAppElement("#root");
+  // Para saber si esta escribiendo o no en el input
+  const [IsTyping, setIsTyping] = useState(false);
+  const [movieSearch, setMovieSearch] = useState("");
+  Modal.setAppElement("#root");
   // Función para abrir el modal y establecer la película seleccionada
   const openModal = (movie) => {
     setIsModalOpen(true);
- 
+
     Promise.all([
       getMovies({
         endpoint: `movie/${movie.id}`,
       }),
       getMovies({ endpoint: `movie/${movie.id}/videos` }),
       getMovies({ endpoint: `movie/${movie.id}/credits` }),
-    ]).then((data) => {
-      const [detail, video, credits] = data;
-      setSelectedMovie({
-        detail,
-        video,
-        movie,
-        credits,
-      });
-    }).finally(
-     );
+    ])
+      .then((data) => {
+        const [detail, video, credits] = data;
+        setSelectedMovie({
+          detail,
+          video,
+          movie,
+          credits,
+        });
+      })
+      .finally();
   };
 
+  // debouncer para buscar las peliculas
+  const debounceGetMovies = debounce((movieSearch) => {
+    setMovieSearch(movieSearch);
+  }, 500);
   // Función para cerrar el modal
   const closeModal = () => {
     setSelectedMovie(null);
@@ -48,22 +60,29 @@ export const App = () => {
   };
   return (
     <>
-      <div className="w-auto ">
-        <main>
-          <NavBar />
-          <SearchMovieAndtitle imageIndex={imageIndex} />
-        </main>
-        <section>
-          <ModalMovie
-            closeModal={closeModal}
-            isModalOpen={isModalOpen}
-            selectedMovie={selectedMovie}
-            setIsModalOpen={closeModal}
-          />
-          <Trending typeTitle={"Tendencias"} openModal={openModal} />
-          <Popular openModal={openModal} />
-        </section>
-      </div>
+      <main>
+        <NavBar />
+        <SearchMovieAndtitle
+          imageIndex={imageIndex}
+          typing={setIsTyping}
+          searchMovie={debounceGetMovies}
+        />
+      </main>
+      <section>
+        <ModalMovie
+          closeModal={closeModal}
+          isModalOpen={isModalOpen}
+          selectedMovie={selectedMovie}
+          setIsModalOpen={closeModal}
+        />
+        <MoviesSearch
+          IsTyping={IsTyping}
+          movieSearched={movieSearch}
+          openModal={openModal}
+        />
+        <Trending typeTitle={"Tendencias"} openModal={openModal} />
+        <Popular openModal={openModal} />
+      </section>
     </>
   );
 };
