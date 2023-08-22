@@ -8,13 +8,15 @@ export const Switch = ({setToday, setWeek, today, week}) => {
         setToday(true);
         setWeek(false);
       }}
-      className={`px-2 cursor-pointer ${
+      className={`px-2 cursor-pointer
+      flex justify-center items-center
+       ${
         today
           ? "bg-blue-950  animate-switch_today text-white font-bold"
           : "bg-white text-gray-600 font-bold text"
       } rounded-full`}
     >
-      <p className={`px-2  ${today && "gradient-text"} `}>Hoy</p>
+      <p className={`px-2 text-xs md:text-sm  text-center ${today && "gradient-text"} `}>Hoy</p>
     </span>
 
     <span
@@ -22,13 +24,13 @@ export const Switch = ({setToday, setWeek, today, week}) => {
         setToday(false);
         setWeek(true);
       }}
-      className={` px-2 cursor-pointer ${
+      className={`flex justify-center items-center px-2 cursor-pointer ${
         week
           ? "bg-blue-950 animate-switch_week  text-white font-bold"
           : "bg-white  text-gray-600  font-bold "
       } rounded-full`}
     >
-      <p className={`px-2   ${week && "gradient-text"} `}>
+      <p className={`px-2  text-center text-xs  md:text-sm ${week && "gradient-text"} `}>
         Esta semana
       </p>
     </span>
