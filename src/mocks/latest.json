@@ -1,0 +1,413 @@
+{
+    "dates": {
+      "maximum": "2023-08-20",
+      "minimum": "2023-07-03"
+    },
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/jZIYaISP3GBSrVOPfrp98AMa8Ng.jpg",
+        "genre_ids": [
+          16,
+          35,
+          10751,
+          14,
+          10749
+        ],
+        "id": 976573,
+        "original_language": "en",
+        "original_title": "Elemental",
+        "overview": "En una ciudad donde los residentes del fuego, el agua, la tierra y el aire viven juntos, una joven apasionada y un chico que se deja llevar por la corriente descubrirán algo elemental: cuánto tienen en común.",
+        "popularity": 4863.437,
+        "poster_path": "/d79DeKDCgFOM23O8Dr6MELZVooY.jpg",
+        "release_date": "2023-06-14",
+        "title": "Elemental",
+        "video": false,
+        "vote_average": 7.8,
+        "vote_count": 1239
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/2vFuG6bWGyQUzYS9d69E5l85nIz.jpg",
+        "genre_ids": [
+          28,
+          12,
+          878
+        ],
+        "id": 667538,
+        "original_language": "en",
+        "original_title": "Transformers: Rise of the Beasts",
+        "overview": "Cuando surge una nueva amenaza capaz de destruir todo el planeta, Optimus Prime y los Autobots deben unirse a una poderosa facción conocida como los Maximals. Con el destino de la humanidad en juego, los humanos Noah y Elena harán lo que sea necesario para ayudar a los Transformers mientras se involucran en la batalla final para salvar la Tierra.",
+        "popularity": 2134.463,
+        "poster_path": "/8HBYMQkF6cFpupgRDhsrrKskXOE.jpg",
+        "release_date": "2023-06-06",
+        "title": "Transformers: El despertar de las bestias",
+        "video": false,
+        "vote_average": 7.5,
+        "vote_count": 2865
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yF1eOkaYvwiORauRCPWznV9xVvi.jpg",
+        "genre_ids": [
+          28,
+          12,
+          878
+        ],
+        "id": 298618,
+        "original_language": "en",
+        "original_title": "The Flash",
+        "overview": "Barry altera inadvertidamente el futuro cuando utiliza sus superpoderes para viajar en el tiempo con el fin de cambiar los acontecimientos del pasado y queda atrapado en una realidad en la que el General Zod ha regresado y no hay superhéroes a los que recurrir. Para salvar el mundo en el que se encuentra y volver al futuro que conoce, la única esperanza de Barry es correr por su vida. Pero, ¿bastará con llevar a cabo el sacrificio definitivo para reiniciar el universo?",
+        "popularity": 1744.899,
+        "poster_path": "/x9Qc86JEyYkAKsdzjDpS5kbaAB7.jpg",
+        "release_date": "2023-06-13",
+        "title": "Flash",
+        "video": false,
+        "vote_average": 7,
+        "vote_count": 2395
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/zN41DPmPhwmgJjHwezALdrdvD0h.jpg",
+        "genre_ids": [
+          28,
+          878,
+          27
+        ],
+        "id": 615656,
+        "original_language": "en",
+        "original_title": "Meg 2: The Trench",
+        "overview": "Una exploración submarina en las profundidades del océano se convierte en una espiral de caos cuando una malévola operación minera amenaza la misión y obliga al equipo de investigación a librar una arriesgada batalla por la supervivencia. Secuela de 'The Meg' (2018).",
+        "popularity": 1701.916,
+        "poster_path": "/mBgynPDplmo5JTY9VfGqY35OjDu.jpg",
+        "release_date": "2023-08-02",
+        "title": "Megalodón 2: La fosa",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 520
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nHf61UzkfFno5X1ofIhugCPus2R.jpg",
+        "genre_ids": [
+          35,
+          12,
+          14
+        ],
+        "id": 346698,
+        "original_language": "en",
+        "original_title": "Barbie",
+        "overview": "Barbie lleva una vida ideal en Barbielandia, allí todo es perfecto, con chupifiestas llenas de música y color, y todos los días son el mejor día. Claro que Barbie se hace algunas preguntas, cuestiones bastante incómodas que no encajan con el mundo idílico en el que ella y las demás Barbies viven. Cuando Barbie se dé cuenta de que es capaz de apoyar los talones en el suelo, y tener los pies planos, decidirá calzarse unos zapatos sin tacones y viajar hasta el mundo real.",
+        "popularity": 1860.335,
+        "poster_path": "/fNtqD4BTFj0Bgo9lyoAtmNFzxHN.jpg",
+        "release_date": "2023-07-19",
+        "title": "Barbie",
+        "video": false,
+        "vote_average": 7.4,
+        "vote_count": 3240
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rRcNmiH55Tz0ugUsDUGmj8Bsa4V.jpg",
+        "genre_ids": [
+          35,
+          10749
+        ],
+        "id": 884605,
+        "original_language": "en",
+        "original_title": "No Hard Feelings",
+        "overview": "Una joven desempleada es contratada por una pareja adinerada para socializar con su hijo introvertido.",
+        "popularity": 1591.22,
+        "poster_path": "/hKlpYtDLBtJEvYVvaUIq39Gh6rI.jpg",
+        "release_date": "2023-06-15",
+        "title": "Sin malos rollos",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 753
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/bz66a19bR6BKsbY8gSZCM4etJiK.jpg",
+        "genre_ids": [
+          28,
+          27,
+          53
+        ],
+        "id": 1006462,
+        "original_language": "en",
+        "original_title": "The Flood",
+        "overview": "Una atrevida fuga en la cárcel durante un peligroso huracán de Luisiana es interrumpida por una horda de grandes caimanes hambrientos.",
+        "popularity": 1623.891,
+        "poster_path": "/tbyhg1DxQkkKUmQ60x7dqGxPvt1.jpg",
+        "release_date": "2023-07-14",
+        "title": "The Flood",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 137
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/hPcP1kv6vrkRmQO3YgV1H97FE5Q.jpg",
+        "genre_ids": [
+          27,
+          9648,
+          53
+        ],
+        "id": 614479,
+        "original_language": "en",
+        "original_title": "Insidious: The Red Door",
+        "overview": "Para enterrar sus demonios de una vez por todas, Josh Lambert y un ya universitario Dalton Lambert, deberán profundizar en El Mas Allá (The Further) más que nunca, enfrentándose al oscuro pasado familiar y a un huésped de nuevos horrores terroríficos que acechan tras la puerta roja.",
+        "popularity": 1420.728,
+        "poster_path": "/wD4eLIHUaTvrXQqAzlfduHQ1NYg.jpg",
+        "release_date": "2023-07-05",
+        "title": "Insidious: La puerta roja",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 912
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nYDPmxvl0if5vHBBp7pDYGkTFc7.jpg",
+        "genre_ids": [
+          27
+        ],
+        "id": 709631,
+        "original_language": "en",
+        "original_title": "Cobweb",
+        "overview": "Un chico que escucha voces en su cabeza decide desatarlas sobre sus padres abusivos.",
+        "popularity": 1324.805,
+        "poster_path": "/o0ndJZaa9ZFFfpnl1IejajXv0II.jpg",
+        "release_date": "2023-07-19",
+        "title": "No tengas miedo (Cobweb)",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 167
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6IafiYxaqR2MxCnEC29bi6637eo.jpg",
+        "genre_ids": [
+          28,
+          12,
+          53,
+          35
+        ],
+        "id": 457332,
+        "original_language": "en",
+        "original_title": "Hidden Strike",
+        "overview": "Dos veteranos de guerra son asignados con la misión de escoltar a un grupo de civiles en la denominada \"autopista de la muerte\", en Baghdad (Iraq), para que lleguen sanos y salvos a la \"Zona Verde\", el emplazamiento de seguridad de la zona.",
+        "popularity": 1063.563,
+        "poster_path": "/wqwDKolEd9lhrPGWwqTCpwJc2aT.jpg",
+        "release_date": "2023-07-06",
+        "title": "Hidden Strike",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 593
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/H6j5smdpRqP9a8UnhWp6zfl0SC.jpg",
+        "genre_ids": [
+          28,
+          878
+        ],
+        "id": 565770,
+        "original_language": "en",
+        "original_title": "Blue Beetle",
+        "overview": "Un adolescente mexicano encuentra un escarabajo alienígena que le proporciona una armadura superpoderosa.",
+        "popularity": 948.321,
+        "poster_path": "/tf5Mqgoj1fFIeP7Ktfn8KGrYhup.jpg",
+        "release_date": "2023-08-16",
+        "title": "Blue Beetle",
+        "video": false,
+        "vote_average": 6.9,
+        "vote_count": 158
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/7drO1kYgQ0PnnU87sAnBEphYrSM.jpg",
+        "genre_ids": [
+          16,
+          28,
+          27
+        ],
+        "id": 1083862,
+        "original_language": "ja",
+        "original_title": "バイオハザード：デスアイランド",
+        "overview": "El agente Leon S. Kennedy tiene la misión de rescatar al Dr. Antonio Taylor de los secuestradores, cuando una misteriosa mujer frustra su persecución. Mientras el agente Chris Redfield investiga un brote de zombis en San Francisco.",
+        "popularity": 987.459,
+        "poster_path": "/lcCcX1ejZTOc2wZK66ou9zWQCu0.jpg",
+        "release_date": "2023-06-22",
+        "title": "Resident Evil: Death Island",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 564
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/lDCIQ1Qe7cRnhZ4ybQVVEbadMZ.jpg",
+        "genre_ids": [
+          27,
+          53
+        ],
+        "id": 1008042,
+        "original_language": "en",
+        "original_title": "Talk to Me",
+        "overview": "La solitaria adolescente Mia se engancha a la emoción de invocar espíritus utilizando una mano embalsamada, pero cuando se enfrenta a un alma que dice ser su madre muerta, desata una plaga de fuerzas sobrenaturales y se debate entre decidir en quién puede confiar: en los vivos o en los muertos.",
+        "popularity": 923.775,
+        "poster_path": "/rS8fjd6dYcf64v3ZhAE6fKrxoaF.jpg",
+        "release_date": "2023-07-26",
+        "title": "Háblame",
+        "video": false,
+        "vote_average": 7.2,
+        "vote_count": 212
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/f7UI3dYpr7ZUHGo0iIr1Qvy1VPe.jpg",
+        "genre_ids": [
+          16,
+          10751,
+          14,
+          35
+        ],
+        "id": 1040148,
+        "original_language": "en",
+        "original_title": "Ruby Gillman, Teenage Kraken",
+        "overview": "Una tímida adolescente descubre que forma parte de la legendaria realeza de los míticos Kraken, los señores del mar, y que su destino en las profundidades del océano es mucho mayor de lo que jamás había soñado.",
+        "popularity": 832.775,
+        "poster_path": "/gdJZsSRscoorp23oN9D4sJPYq4L.jpg",
+        "release_date": "2023-06-28",
+        "title": "Ruby: Aventuras de una kraken adolescente",
+        "video": false,
+        "vote_average": 7.6,
+        "vote_count": 561
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/iJ0UZaC7XW7BUpRQ7OLPZSms8Ou.jpg",
+        "genre_ids": [
+          28,
+          12,
+          18,
+          14,
+          878
+        ],
+        "id": 813477,
+        "original_language": "ja",
+        "original_title": "シン・仮面ライダー",
+        "overview": "",
+        "popularity": 796.227,
+        "poster_path": "/h8zP8C2mKFfwsHhNgxMzJeHEL4d.jpg",
+        "release_date": "2023-03-17",
+        "title": "シン・仮面ライダー",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 164
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rLb2cwF3Pazuxaj0sRXQ037tGI1.jpg",
+        "genre_ids": [
+          18,
+          36
+        ],
+        "id": 872585,
+        "original_language": "en",
+        "original_title": "Oppenheimer",
+        "overview": "Película sobre el físico J. Robert Oppenheimer y su papel como desarrollador de la bomba atómica. Basada en el libro 'American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer' de Kai Bird y Martin J. Sherwin.",
+        "popularity": 761.391,
+        "poster_path": "/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg",
+        "release_date": "2023-07-19",
+        "title": "Oppenheimer",
+        "video": false,
+        "vote_average": 8.3,
+        "vote_count": 2106
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/iEFuHjqrE059SmflBva1JzDJutE.jpg",
+        "genre_ids": [
+          16,
+          10751,
+          28,
+          14,
+          10749
+        ],
+        "id": 496450,
+        "original_language": "fr",
+        "original_title": "Miraculous - le film",
+        "overview": "La superheroína, que ha cautivado los corazones de millones de fans en todo el mundo, llega por primera vez al cine. Ladybug tendrá que unir fuerzas con Cat Noir, la carismática y franca justiciera enmascarada, para luchar contra los supervillanos que amenazan con destruir París.",
+        "popularity": 693.189,
+        "poster_path": "/bVlB5J2KYkbwBnWJSJEAbvPFaqm.jpg",
+        "release_date": "2023-07-05",
+        "title": "Prodigiosa: Las aventuras de Ladybug: La película",
+        "video": false,
+        "vote_average": 7.9,
+        "vote_count": 493
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/14GEZCzCGhV7FMFaWi4Ec22Kcai.jpg",
+        "genre_ids": [
+          16,
+          12,
+          10751,
+          14
+        ],
+        "id": 459003,
+        "original_language": "uk",
+        "original_title": "Мавка: Лісова пісня",
+        "overview": "Mavka, un Alma del Bosque y su Guardián, se enfrenta a una elección imposible entre el amor y su deber como guardiana del Corazón del Bosque, cuando se enamora de un humano: el talentoso joven músico Lukas.",
+        "popularity": 648.3,
+        "poster_path": "/7y2MqycqOzK8V8axtRLF6BERWoG.jpg",
+        "release_date": "2023-03-02",
+        "title": "Mavka: Guardiana del bosque",
+        "video": false,
+        "vote_average": 7.4,
+        "vote_count": 322
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/oqP1qEZccq5AD9TVTIaO6IGUj7o.jpg",
+        "genre_ids": [
+          14,
+          28,
+          12
+        ],
+        "id": 455476,
+        "original_language": "en",
+        "original_title": "Knights of the Zodiac",
+        "overview": "Seiya, un testarudo adolescente callejero, se pasa el tiempo luchando por dinero mientras busca a su hermana secuestrada. Cuando en una de sus peleas se le revelan poderes místicos que desconocía, Seiya se ve inmerso en un mundo de santos en guerra, antiguos entrenamientos mágicos y una diosa reencarnada que necesita su protección.",
+        "popularity": 663.593,
+        "poster_path": "/zqhO44oc0pWM32seJeXMcjPLvwV.jpg",
+        "release_date": "2023-04-27",
+        "title": "Los Caballeros del Zodíaco",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 750
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/aLpQ3G2LRgXYNrQgUlo6AQRo9R6.jpg",
+        "genre_ids": [
+          28,
+          53
+        ],
+        "id": 1143190,
+        "original_language": "en",
+        "original_title": "Fear the Night",
+        "overview": "",
+        "popularity": 623.758,
+        "poster_path": "/4XLZS2xvdv5rxizzTUVREtRyw95.jpg",
+        "release_date": "2023-07-21",
+        "title": "Fear the Night",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 99
+      }
+    ],
+    "total_pages": 79,
+    "total_results": 1575
+  }

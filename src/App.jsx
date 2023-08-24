@@ -17,6 +17,7 @@ import { MoviesSearch } from "./components/MoviesSearch";
 
 // debouncer
 import debounce from "just-debounce-it";
+import { NowPlayingMovies } from "./components/NowPlayingMovies";
 
 export const App = () => {
   const { imageIndex } = useRandomimage();
@@ -28,8 +29,8 @@ export const App = () => {
   Modal.setAppElement("#root");
   // Función para abrir el modal y establecer la película seleccionada
   const openModal = (movie) => {
+    document.querySelector('swiper-container').classList.add('index-swiper')
     setIsModalOpen(true);
-
     Promise.all([
       getMovies({
         endpoint: `movie/${movie.id}`,
@@ -57,6 +58,8 @@ export const App = () => {
   const closeModal = () => {
     setSelectedMovie(null);
     setIsModalOpen(false);
+    document.querySelector('swiper-container').classList.remove('index-swiper')
+
   };
   return (
     <>
@@ -81,6 +84,7 @@ export const App = () => {
           openModal={openModal}
         />
         <Trending typeTitle={"Tendencias"} openModal={openModal} />
+        <NowPlayingMovies/>
         <Popular openModal={openModal} />
       </section>
     </>

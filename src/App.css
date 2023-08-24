@@ -108,3 +108,13 @@
     }
   }
         
+
+
+
+
+  /* swiper */
+
+  /* Colocar en z index en 1o el swiper  */
+  .index-swiper{
+    z-index: -10;
+  }

@@ -32,6 +32,12 @@ export const NO_IMAGE= '../../public/no-image.jpg'
 export const addPoster = ({keyImg}) =>{
   return `https://www.themoviedb.org/t/p/w220_and_h330_face${keyImg}`
 }
+export const backgrounPoster = ({keyImg}) =>{
+  return `https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${keyImg}` 
+}
+
+
+
 
 
 

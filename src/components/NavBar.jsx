@@ -22,12 +22,12 @@ export const NavBar = () => {
           </span>
           <div className="w-14 md:w-40 xl:w-40 mx-4 ">
             <img
-              className="hidden md:block "
+              className="hidden md:block xl:block"
               src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
               alt=""
             />
             <img
-              className="md:hidden"
+              className="md:hidden xl:hidden"
               src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
               alt=""
             />
