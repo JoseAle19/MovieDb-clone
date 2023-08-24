@@ -42,7 +42,7 @@ export const NowPlayingMovies = () => {
         disableOnInteraction: false,
       }}
       ref={swiperElRef}
-      slides-per-view="3"
+      slides-per-view="1"
       centered-slides={true}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
@@ -53,7 +53,7 @@ export const NowPlayingMovies = () => {
       {movies.results.map((movie, index) => {
         return (
           <swiper-slide key={movie.id}>
-            <div className=" relative flex justify-center items-center">
+            <div className=" p-2 relative flex justify-center items-center">
               <div
              className={` bg-no-repeat bg-center bg-contain  h-72 w-96 flex items-center justify-center ${
                   currentIndex === index
