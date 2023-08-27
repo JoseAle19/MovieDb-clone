@@ -29,7 +29,7 @@ export const ModalMovie = ({
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
-        className="h-5/6 w-5/6 md:w-[75%] xl:w-[70%] backdrop-blur-md bg-black/70 overflow-y-auto  scroll-visible p-2 z-50 "
+        className="h-5/6 w-5/6 md:w-[75%] xl:w-[70%] backdrop-blur-md bg-black/70 overflow-y-auto  scroll-visible p-2  "
         overlayClassName="modal-overlay"
       >
         <section className="  xl:flex md:flex md:flex-row xl:flex-row flex flex-col gap-5 shadow-2xl shadow-slate-400  ">
@@ -56,7 +56,7 @@ export const ModalMovie = ({
                 detail={selectedMovie?.detail}
               />
             </div>
-            
+           
           </div>
         </section>
         {!selectedMovie?.credits ? (

@@ -22,7 +22,7 @@ export const Popular = ({ openModal }) => {
   return (
     <div>
       <div className="m-2 flex gap-6  items-center  mb-4  ">
-      <p className="ml-2 md:ml-12 xl:ml-12  text-2xl font-bold">Populares</p>
+      <p className="ml-2 md:ml-12 xl:ml-12  text-2xl font-bold gradient-text ">Populares</p>
 
       </div>
       <ListMovie loading={loading} movies={movies} openModal={openModal} />

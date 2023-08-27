@@ -27,7 +27,7 @@ export const CardMovieAbout = ({
           </p>
         </div>
         <div className="w-full flex flex-col items-center justify-between mt-10 ">
-          <p className=" text-white/70 font-bold text-[12px] " >20/7/2023 (MX) Comedia, Aventura, Fantasía 1h 54m</p>
+          {/* <p className=" text-white/70 font-bold text-[12px] " >20/7/2023 (MX) Comedia, Aventura, Fantasía 1h 54m</p> */}
           <p className=" text-white font-bold ">"{detail?.tagline}"</p>
         </div>
       </div>

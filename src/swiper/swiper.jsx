@@ -12,7 +12,6 @@ import {
   EffectCoverflow,
   Autoplay,
   Navigation,
-  Pagination,
 } from "swiper/modules";
 import { backgroundPoster } from "../constants/constantes";
 import { useEffect } from "react";
@@ -38,7 +37,6 @@ export default function SwiperMovie({ movies, openModal }) {
   return (
     <>
       <swiper-container
-        initial-slide={9}
         effect="coverflow"
         navigation={true}
         slides-per-view={slidesPerView}
@@ -50,8 +48,7 @@ export default function SwiperMovie({ movies, openModal }) {
         coverflow-effect-stretch={"50"}
         coverflow-effect-depth={"100"}
         coverflow-effect-modifier={"2.5"}
-        pagination={true}
-        modules={[Autoplay, EffectCoverflow, Navigation, Pagination]}
+        modules={[Autoplay, EffectCoverflow, Navigation]}
       >
         {movies?.results?.map((movie) => {
           return (
@@ -62,7 +59,7 @@ export default function SwiperMovie({ movies, openModal }) {
               }}
                className="  flex items-center justify-center ">
                 <img
-                  className="object-contain hover:scale-95 duration-500 "
+                  className="object-cover hover:scale-95 duration-500 "
                   src={backgroundPoster({ keyImg: movie.poster_path })}
                   alt={movie.title}
                 />

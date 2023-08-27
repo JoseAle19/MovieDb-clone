@@ -27,8 +27,8 @@ export const CardMovie = ({ movie, loading }) => {
           </div>
         </div>
         <div className=" h-full flex flex-col justify-around items-center mt-5">
-          <p className="font-bold text-center ">{movie.title}</p>
-          <p className="text-sm font-light">{movie.release_date}</p>
+          <p className=" text-white font-bold text-center ">{movie.title}</p>
+          <p className=" text-white text-sm font-light">{movie.release_date}</p>
         </div>
       </div>
     );

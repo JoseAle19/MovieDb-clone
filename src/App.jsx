@@ -71,7 +71,7 @@ export const App = () => {
           searchMovie={debounceGetMovies}
         />
       </main>
-      <section>
+      <section className="bg-sky-950"> 
         <ModalMovie
           closeModal={closeModal}
           isModalOpen={isModalOpen}
