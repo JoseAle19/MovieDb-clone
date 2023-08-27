@@ -29,7 +29,7 @@ export const ModalMovie = ({
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
-        className="h-5/6 w-5/6 md:w-[75%] xl:w-[70%] backdrop-blur-md bg-black/70 overflow-y-auto  scroll-visible p-2 "
+        className="h-5/6 w-5/6 md:w-[75%] xl:w-[70%] backdrop-blur-md bg-black/70 overflow-y-auto  scroll-visible p-2 z-50 "
         overlayClassName="modal-overlay"
       >
         <section className="  xl:flex md:flex md:flex-row xl:flex-row flex flex-col gap-5 shadow-2xl shadow-slate-400  ">
@@ -56,21 +56,7 @@ export const ModalMovie = ({
                 detail={selectedMovie?.detail}
               />
             </div>
-            {/* <svg
-              onClick={() => setIsModalOpen()}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="white"
-              className="w-8 h-8 absolute top-0 right-0 cursor-pointer m-2 hover:scale-125 duration-300"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg> */}
+            
           </div>
         </section>
         {!selectedMovie?.credits ? (

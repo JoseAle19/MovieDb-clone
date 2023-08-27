@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import "./styles.css";
 import { register } from "swiper/element/bundle";
 // register Swiper custom elements
 register();
@@ -15,10 +14,10 @@ import {
   Navigation,
   Pagination,
 } from "swiper/modules";
-import { backgroundPoster } from "./constants/constantes";
+import { backgroundPoster } from "../constants/constantes";
 import { useEffect } from "react";
 import { useState } from "react";
-export default function SwiperMovie({ movies }) {
+export default function SwiperMovie({ movies, openModal }) {
   const [slidesPerView, setSlidesPerView] = useState(3); // Valor por defecto para dispositivos de escritorio
 
   const handleResize = () => {
@@ -39,12 +38,12 @@ export default function SwiperMovie({ movies }) {
   return (
     <>
       <swiper-container
+        initial-slide={9}
         effect="coverflow"
         navigation={true}
         slides-per-view={slidesPerView}
         centered-slides="true"
         speed="500"
-        loop="true"
         autoplay-delay="1000"
         autoplay-pause-on-mouse-enter={true}
         coverflow-effect-rotate={"0"}
@@ -57,11 +56,15 @@ export default function SwiperMovie({ movies }) {
         {movies?.results?.map((movie) => {
           return (
             <swiper-slide key={movie.id}>
-              <div className="  flex items-center justify-center ">
+              <div  
+              onClick={()=>{
+                openModal(movie)
+              }}
+               className="  flex items-center justify-center ">
                 <img
-                  className="object-contain "
+                  className="object-contain hover:scale-95 duration-500 "
                   src={backgroundPoster({ keyImg: movie.poster_path })}
-                  alt=""
+                  alt={movie.title}
                 />
               </div>
             </swiper-slide>

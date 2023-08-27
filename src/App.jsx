@@ -84,7 +84,7 @@ export const App = () => {
           openModal={openModal}
         />
         <Trending typeTitle={"Tendencias"} openModal={openModal} />
-        <NowPlayingMovies/>
+        <NowPlayingMovies openModal={openModal}  />
         <Popular openModal={openModal} />
       </section>
     </>
