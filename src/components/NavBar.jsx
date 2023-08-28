@@ -86,7 +86,7 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
             }}
             className=" block xl:hidden md:hidden"
           >
-            {isOpen ? iconMenu : iconClose}
+            {!isOpen ? iconMenu : iconClose}
           </span>
          
         </nav>
