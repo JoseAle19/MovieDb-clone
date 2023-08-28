@@ -10,12 +10,16 @@ export const Trending = ({ typeTitle, openModal }) => {
   const [today, setToday] = useState(true);
   const [week, setWeek] = useState(false);
   const [movies, setmovies] = useState([]);
-
+  const [loading, setloading] = useState(true);
   useEffect(() => {
-
+    setloading(true);
     getMovies({
       endpoint: `/trending/movie/${today ? "day" : "week"}?language=es-ES`,
-    }).then((data) => setmovies(data));
+    })
+      .then((data) => setmovies(data))
+      .finally(() => {
+        setloading(false);
+      });
   }, [week, today]);
   return (
     <>
@@ -41,7 +45,7 @@ export const Trending = ({ typeTitle, openModal }) => {
             />
           </div>
 
-          <ListMovie  movies={movies} openModal={openModal} />
+          <ListMovie loading={loading} movies={movies} openModal={openModal} />
         </div>
       </div>
     </>
