@@ -14,7 +14,7 @@ export const NowPlayingMovies = ({ openModal }) => {
   }, []);
 
   return (
-    <div>
+    <div  className="">
       <div className="m-2 flex gap-6  items-center  mb-4  ">
         <p className="ml-2 md:ml-12 xl:ml-12  text-4xl font-bold text-gray-600 w-full text-center animate-bounce gradient-text">
           En estreno ahora

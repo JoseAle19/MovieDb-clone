@@ -13,7 +13,7 @@ export const Switch = ({setToday, setWeek, today, week}) => {
        ${
         today
           ? "bg-blue-950  animate-switch_today text-white font-bold"
-          : "bg-white text-gray-600 font-bold text"
+          : "bg-blue-950/70 text-gray-600 font-bold text"
       } rounded-full`}
     >
       <p className={`px-2 text-xs md:text-sm  text-center ${today && "gradient-text"} `}>Hoy</p>
@@ -27,7 +27,7 @@ export const Switch = ({setToday, setWeek, today, week}) => {
       className={`flex justify-center items-center px-2 cursor-pointer ${
         week
           ? "bg-blue-950 animate-switch_week  text-white font-bold"
-          : "bg-white  text-gray-600  font-bold "
+          : "bg-blue-950/70  text-gray-600  font-bold "
       } rounded-full`}
     >
       <p className={`px-2  text-center text-xs  md:text-sm ${week && "gradient-text"} `}>

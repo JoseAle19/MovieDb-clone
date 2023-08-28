@@ -3,7 +3,7 @@ import { NO_IMAGE, addPoster } from "../constants/constantes";
 import { InformationOption } from "./InformationOptions";
 import { ProgressBar } from "./ProgressBar";
 
-export const CardMovie = ({ movie, loading }) => {
+export const CardMovie = ({ movie }) => {
     return (
       <div
         key={movie.id}
@@ -14,11 +14,11 @@ export const CardMovie = ({ movie, loading }) => {
             loading="lazy"
             className="object-cover rounded-xl w-64 h-56 "
             src={`${
-              loading === undefined
+              !movie 
                 ? NO_IMAGE
-                : addPoster({ keyImg: movie?.poster_path })
+                : addPoster({ keyImg: movie?.poster_path  })
             }`}
-            alt=""
+            alt={movie.title}
           />
   
           <InformationOption />

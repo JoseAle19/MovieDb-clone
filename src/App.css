@@ -1,3 +1,5 @@
+
+
 .loader {
     color: #fff;
     font-family: Consolas, Menlo, Monaco, monospace;
@@ -40,7 +42,7 @@
 .scroll-visible::-webkit-scrollbar-thumb {
     height: 200px;
     height: 200px;
-    background-color: #e4e3e3;
+    background-color: rgb(16, 73, 110);
 }
 
 /* Aca termina los estilos de la barra */
@@ -62,6 +64,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 40;
 }
 
 .loader-images {

@@ -21,13 +21,22 @@ export const options = {
   },
 };
 
-export const NO_IMAGE = "../../public/no-image.jpg";
+export const NO_IMAGE =
+  "https://www.ncenet.com/wp-content/uploads/2020/04/No-image-found.jpg";
 
 export const addPoster = ({ keyImg }) => {
-  return `https://www.themoviedb.org/t/p/w220_and_h330_face${keyImg}`;
+  if (!keyImg) {
+    return NO_IMAGE;
+  } else {
+    return `https://www.themoviedb.org/t/p/w220_and_h330_face${keyImg}`;
+  }
 };
 export const backgroundPoster = ({ keyImg }) => {
   return `https://www.themoviedb.org/t/p/w300_and_h450_bestv2${keyImg}`;
+};
+
+export const modalPoster = (key) => {
+  return `https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/${key}`;
 };
 
 export const urlVideo = "https://www.youtube.com/embed/";

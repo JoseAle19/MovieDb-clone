@@ -1,24 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
-import {  addPoster } from "../constants/constantes";
-import DetailMovie from "../mocks/details_movie.json";
-import Movies from "../mocks/movies_top.json";
+import { NO_IMAGE, addPoster } from "../constants/constantes";
 import { ProgressBar } from "./ProgressBar";
 /* eslint-disable react/prop-types */
 // Importar json de peliculas para tener el tipado, solo desarollo
-export const CardMovieAbout = ({
-  movie = Movies.results[0],
-  detail = DetailMovie,
-}) => {
+export const CardMovieAbout = ({ movie, detail }) => {
   return (
     <section className="w-full h-full flex  p-2 gap-5">
       <div className="w-[30%] animate-fadeIn">
         <img
           className="object-cover w-full h-full rounded-md"
-          src={`${addPoster({ keyImg: movie?.backdrop_path })}`}
+          src={`${ !movie ? NO_IMAGE : addPoster({ keyImg: movie?.backdrop_path })}`}
           alt={`Pelicula: ${movie?.title}`}
         />
       </div>
- 
+
       <div className="w-[70%]">
         <div className="flex gap-2  ">
           <ProgressBar percent={movie?.vote_average} />

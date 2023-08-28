@@ -57,9 +57,9 @@ export default function SwiperMovie({ movies, openModal }) {
               onClick={()=>{
                 openModal(movie)
               }}
-               className="  flex items-center justify-center ">
+               className="  flex items-center justify-center rounded-">
                 <img
-                  className="object-cover hover:scale-95 duration-500 "
+                  className="object-cover rounded-xl hover:scale-95 duration-500 cursor-pointer "
                   src={backgroundPoster({ keyImg: movie.poster_path })}
                   alt={movie.title}
                 />

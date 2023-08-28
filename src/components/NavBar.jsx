@@ -1,43 +1,21 @@
-export const NavBar = () => {
+/* eslint-disable react/prop-types */
+import { iconClose, iconMenu } from "../svgs/icons";
+
+export const NavBar = ({ isOpen, setIsOpen }) => {
   return (
     <>
-      <header>
-        <nav className="w-full p-4 bg-sky-950 flex flex-row  justify-between md:justify-between items-center ">
-          {" "}
-          <span  className=" block xl:hidden md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="white"
-              className="w-8 h-8 m-2 cursor-pointer hover:scale-125 duration-300"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          </span>
-          <div className="w-14 md:w-40 xl:w-40 mx-4 ">
-            <img
-              className="hidden md:block xl:block"
-              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
-              alt=""
-            />
-            <img
-              className="md:hidden xl:hidden"
-              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
-              alt=""
-            />
+      <header className="relative">
+      {
+         isOpen&& <div
+            className={`fixed right-0 top-0  z-10 bg-red-500/90 h-full w-[80%] p-2  `}
+          >
+            <div className="bg-green-500 w-full h-1/2 flex items-center">
+              <p className="text-center  font-bold text-2xl">awanta ando terminando</p>
+            </div>
           </div>
-          <div className=" hidden  md:flex gap-8 items-center  text-white  font-bold text-sm ">
-            <p>Películas </p>
-            <p>Programas de televisión</p>
-            <p>Personas</p>
-            <p>Más</p>
-          </div>
+        }
+        <nav className="fixed  z-10 w-full p-2 bg-sky-950 flex flex-row  justify-between md:justify-between items-center ">
+          
           <div className="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +62,33 @@ export const NavBar = () => {
               />
             </svg>
           </div>
+          <div className="w-14 md:w-40 xl:w-40 mx-4 ">
+            <img
+              className="hidden md:block xl:block"
+              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+              alt=""
+            />
+            <img
+              className="md:hidden xl:hidden"
+              src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+              alt=""
+            />
+          </div>
+          <div className=" hidden  md:flex gap-8 items-center  text-white  font-bold text-sm ">
+            <p>Películas </p>
+            <p>Programas de televisión</p>
+            <p>Personas</p>
+            <p>Más</p>
+          </div>
+          <span
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className=" block xl:hidden md:hidden"
+          >
+            {isOpen ? iconMenu : iconClose}
+          </span>
+         
         </nav>
       </header>
     </>

@@ -29,7 +29,7 @@ export const ModalMovie = ({
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
-        className="h-5/6 w-5/6 md:w-[75%] xl:w-[70%] backdrop-blur-md bg-black/70 overflow-y-auto  scroll-visible p-2  "
+        className="h-[70%] w-5/6 md:w-[75%] xl:w-[70%] backdrop-blur-md bg-black/70 overflow-y-auto  scroll-visible p-2  "
         overlayClassName="modal-overlay"
       >
         <section className="  xl:flex md:flex md:flex-row xl:flex-row flex flex-col gap-5 shadow-2xl shadow-slate-400  ">
@@ -38,7 +38,7 @@ export const ModalMovie = ({
           </div>
           <div
             style={{
-              backgroundImage: `url('https://www.themoviedb.org/t/p/w220_and_h330_face${selectedMovie?.movie?.poster_path}')`,
+              backgroundImage: `url('https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/${selectedMovie?.movie?.poster_path}')`,
             }}
             className={`w-full md:w-1/2 xl:w-1/2   h-full flex items-center justify-center
            bg-no-repeat
