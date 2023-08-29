@@ -3,8 +3,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      
       keyframes: {
+        openmenu: {
+          // initial position
+          "0%": { right: "-224px" },
+          // final position
+          "100%": { right: "0px" },
+        },
+        closemenu: {
+          // initial position
+          "0%": { right: "0px" },
+          // final position
+          "100%": { right: "-224px" },
+        },
         switch_today: {
           "0%": { transform: "translate(50px)" },
           "5%": { transform: "translate(47.5px)" },
@@ -80,6 +91,8 @@ export default {
         switch_week: "switch_week .2s ease-in",
         fadeIn: "movies_opacityIn 1.2s linear",
         fadeOut: "movies_opacityOut 1.2s linear",
+        openmenu: "openmenu .5s ease-in",
+        closemenu: "closemenu .5s ease-in",
       },
     },
   },

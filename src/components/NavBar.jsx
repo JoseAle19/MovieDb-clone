@@ -1,21 +1,39 @@
 /* eslint-disable react/prop-types */
 import { iconClose, iconMenu } from "../svgs/icons";
-
+import { removeOverflow } from "../utils/overflowbody";
+import "../App.css";
 export const NavBar = ({ isOpen, setIsOpen }) => {
+  removeOverflow(isOpen);
   return (
     <>
       <header className="relative">
-      {
-         isOpen&& <div
-            className={`fixed right-0 top-0  z-10 bg-red-500/90 h-full w-[80%] p-2  `}
-          >
-            <div className="bg-green-500 w-full h-1/2 flex items-center">
-              <p className="text-center  font-bold text-2xl">awanta ando terminando</p>
-            </div>
+        <div
+          className={
+            isOpen
+              ? " md:hidden xl:hidden 2xl:hidden fixed z-20  right-[0px] font-epilogue flex  animate-openmenu w-56  flex-col bg-sky-950/90     h-screen"
+              : " md:hidden xl:hidden 2xl:hidden fixed z-20 animate-closemenu right-[-224px] flex w-56  flex-col   h-screen bg-sky-950/90   "
+          } 
+        >
+          {/* Cerrar la navegacion */}
+          <div className="flex flex-col items-end m-2 ">
+            <span
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className=" block xl:hidden md:hidden"
+            >
+              {iconClose}
+            </span>
           </div>
-        }
+          <div className="h-full m-5 flex flex-col text-white items-end  text-2xl font-bold">
+            <p className="mt-2 hover:scale-125 duration-300" >Peliculas</p>
+            <p className="mt-2 hover:scale-125 duration-300" >Favoritos</p>
+            <p className="mt-2 hover:scale-125 duration-300" >Ajustes</p>
+            <p className="mt-2 hover:scale-125 duration-300" >Cuenta</p>
+            <p className="mt-2 hover:scale-125 duration-300" >Más</p>
+          </div>
+        </div>
         <nav className="fixed  z-10 w-full p-2 bg-sky-950 flex flex-row  justify-between md:justify-between items-center ">
-          
           <div className="flex gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +87,7 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
               alt=""
             />
             <img
-              className="md:hidden xl:hidden"
+              className="block z-10 md:hidden xl:hidden"
               src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
               alt=""
             />
@@ -86,9 +104,8 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
             }}
             className=" block xl:hidden md:hidden"
           >
-            {!isOpen ? iconMenu : iconClose}
+            {iconMenu}
           </span>
-         
         </nav>
       </header>
     </>
