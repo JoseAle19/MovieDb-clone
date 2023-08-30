@@ -8,3 +8,6 @@ export { ProgressBar } from "./ProgressBar";
 export { SearchMovieAndtitle } from "./SearchMovieAndTitle";
 export { Switch } from "./Switch";
 export { Trending } from "./Trending";
+export { Popular} from "./Popular";
+export { NowPlayingMovies} from "./NowPlayingMovies";
+export { MoviesSearch} from "./MoviesSearch";

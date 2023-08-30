@@ -4,7 +4,7 @@ import { ListMovie } from "./ListMovie";
 import { useEffect } from "react";
 import { getMovies } from "../services/movies";
 
-export const Popular = ({ openModal }) => {
+export const Popular = ({ openModal, saveMovieinLocalStorage, storedIds }) => {
   const [movies, setmovies] = useState([]);
   useEffect(() => {
     // https://api.themoviedb.org/3/movie/popular
@@ -24,7 +24,12 @@ export const Popular = ({ openModal }) => {
           Populares
         </p>
       </div>
-      <ListMovie  movies={movies} openModal={openModal} />
+      <ListMovie
+        movies={movies}
+        openModal={openModal}
+        saveMovieinLocalStorage={saveMovieinLocalStorage}
+        storedIds={storedIds}
+      />
     </div>
   );
 };

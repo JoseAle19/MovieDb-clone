@@ -6,7 +6,7 @@ import { Switch } from "./Switch";
 import { getMovies } from "../services/movies";
 import { ListMovie } from "./ListMovie";
 
-export const Trending = ({ typeTitle, openModal }) => {
+export const Trending = ({ typeTitle, openModal , saveMovieinLocalStorage, storedIds}) => {
   const [today, setToday] = useState(true);
   const [week, setWeek] = useState(false);
   const [movies, setmovies] = useState([]);
@@ -45,7 +45,7 @@ export const Trending = ({ typeTitle, openModal }) => {
             />
           </div>
 
-          <ListMovie loading={loading} movies={movies} openModal={openModal} />
+          <ListMovie saveMovieinLocalStorage={saveMovieinLocalStorage} loading={loading} movies={movies} openModal={openModal} storedIds={storedIds}/>
         </div>
       </div>
     </>

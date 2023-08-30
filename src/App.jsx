@@ -5,15 +5,22 @@ import {
   ModalMovie,
   SearchMovieAndtitle,
   Trending,
+  NowPlayingMovies,
+  Popular,
+  MoviesSearch,
 } from "./components/";
 
-import { Popular } from "./components/Popular";
-import { MoviesSearch } from "./components/MoviesSearch";
-
-import { NowPlayingMovies } from "./components/NowPlayingMovies";
 import { useMovie } from "./hooks/movie";
+import { useState } from "react";
 
 export const App = () => {
+  {
+    /* TODO: Si!, si ya sé que se debe y puede hacer con redux, context o zuztand lo hare despues :), GRACIAS*/
+  }
+  const storedItemsString = localStorage.getItem("moviesIds");
+  const storedItems = storedItemsString ? JSON.parse(storedItemsString) : [];
+  const [StoredItems, setStoredItems] = useState(storedItems);
+
   const {
     IsTyping,
     closeModal,
@@ -27,6 +34,16 @@ export const App = () => {
     isOpen,
     setIsOpen,
   } = useMovie();
+
+  const saveMovieinLocalStorage = (movieId) => {
+    if (StoredItems.includes(movieId)) {
+      return;
+    } else {
+      setStoredItems([...StoredItems, movieId]);
+    }
+  };
+  localStorage.setItem("moviesIds", JSON.stringify(StoredItems));
+
   return (
     <>
       <main>
@@ -51,9 +68,21 @@ export const App = () => {
             openModal={openModal}
           />
         )}
-        <Trending typeTitle={"Tendencias"} openModal={openModal} />
-        <NowPlayingMovies openModal={openModal} />
-        <Popular openModal={openModal} />
+        <Trending
+          saveMovieinLocalStorage={saveMovieinLocalStorage}
+          typeTitle={"Tendencias"}
+          openModal={openModal}
+          storedIds={storedItems}
+        />
+        <NowPlayingMovies
+          saveMovieinLocalStorage={saveMovieinLocalStorage}
+          openModal={openModal}
+        />
+        <Popular
+          saveMovieinLocalStorage={saveMovieinLocalStorage}
+          storedIds={storedItems}
+          openModal={openModal}
+        />
       </section>
     </>
   );

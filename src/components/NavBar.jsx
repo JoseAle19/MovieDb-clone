@@ -12,7 +12,7 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
             isOpen
               ? " md:hidden xl:hidden 2xl:hidden fixed z-20  right-[0px] font-epilogue flex  animate-openmenu w-56  flex-col bg-sky-950/90     h-screen"
               : " md:hidden xl:hidden 2xl:hidden fixed z-20 animate-closemenu right-[-224px] flex w-56  flex-col   h-screen bg-sky-950/90   "
-          } 
+          }
         >
           {/* Cerrar la navegacion */}
           <div className="flex flex-col items-end m-2 ">
@@ -26,30 +26,30 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
             </span>
           </div>
           <div className="h-full m-5 flex flex-col text-white items-end  text-2xl font-bold">
-            <p className="mt-2 hover:scale-125 duration-300" >Peliculas</p>
-            <p className="mt-2 hover:scale-125 duration-300" >Favoritos</p>
-            <p className="mt-2 hover:scale-125 duration-300" >Ajustes</p>
-            <p className="mt-2 hover:scale-125 duration-300" >Cuenta</p>
-            <p className="mt-2 hover:scale-125 duration-300" >Más</p>
+            <p className="mt-2 hover:scale-125 duration-300">Peliculas</p>
+            <p className="mt-2 hover:scale-125 duration-300">Favoritos</p>
+            <p className="mt-2 hover:scale-125 duration-300">Ajustes</p>
+            <p className="mt-2 hover:scale-125 duration-300">Cuenta</p>
+            <p className="mt-2 hover:scale-125 duration-300">Más</p>
           </div>
         </div>
         <nav className="fixed  z-10 w-full p-2 bg-sky-950 flex flex-row  justify-between md:justify-between items-center ">
           <div className="flex gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="white"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
-              />
-            </svg>
-
+           
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="white"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+                />
+              </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -93,10 +93,10 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
             />
           </div>
           <div className=" hidden  md:flex gap-8 items-center  text-white  font-bold text-sm ">
-            <p>Películas </p>
-            <p>Programas de televisión</p>
-            <p>Personas</p>
-            <p>Más</p>
+            <p className="hover:scale-125 duration-300" >Películas </p>
+            <p className="hover:scale-125 duration-300" >Programas de televisión</p>
+            <p className="hover:scale-125 duration-300" >Personas</p>
+            <p className="hover:scale-125 duration-300" >Más</p>
           </div>
           <span
             onClick={() => {
