@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
 import "./App.css";
-
+import { Routes, Route } from "react-router-dom";
 import {
   NavBar,
   ModalMovie,
@@ -11,38 +13,23 @@ import {
 } from "./components/";
 
 import { useMovie } from "./hooks/movie";
-import { useState } from "react";
+import { Favorites } from "./pages/Favorites";
 
 export const App = () => {
-  {
-    /* TODO: Si!, si ya sé que se debe y puede hacer con redux, context o zuztand lo hare despues :), GRACIAS*/
-  }
   const storedItemsString = localStorage.getItem("moviesIds");
   const storedItems = storedItemsString ? JSON.parse(storedItemsString) : [];
   const [StoredItems, setStoredItems] = useState(storedItems);
 
-  const {
-    IsTyping,
-    closeModal,
-    debounceGetMovies,
-    imageIndex,
-    isModalOpen,
-    movieSearch,
-    openModal,
-    selectedMovie,
-    setIsTyping,
-    isOpen,
-    setIsOpen,
-  } = useMovie();
+  {
+    /* TODO: Si!, si ya sé que se debe y puede hacer con redux, context o zuztand lo hare despues :), GRACIAS*/
+  }
 
-  const saveMovieinLocalStorage = (movieId) => {
-    if (StoredItems.includes(movieId)) {
-      return;
-    } else {
-      setStoredItems([...StoredItems, movieId]);
-    }
-  };
-  localStorage.setItem("moviesIds", JSON.stringify(StoredItems));
+  useEffect(() => {
+    document.body.classList.add("scroll-visible");
+  }, []);
+
+  const { debounceGetMovies, imageIndex, setIsTyping, isOpen, setIsOpen } =
+    useMovie();
 
   return (
     <>
@@ -54,36 +41,69 @@ export const App = () => {
           searchMovie={debounceGetMovies}
         />
       </main>
-      <section>
-        <ModalMovie
-          closeModal={closeModal}
-          isModalOpen={isModalOpen}
-          selectedMovie={selectedMovie}
-          setIsModalOpen={closeModal}
-        />
-        {IsTyping && (
-          <MoviesSearch
-            IsTyping={IsTyping}
-            movieSearched={movieSearch}
-            openModal={openModal}
-          />
-        )}
-        <Trending
-          saveMovieinLocalStorage={saveMovieinLocalStorage}
-          typeTitle={"Tendencias"}
-          openModal={openModal}
-          storedIds={storedItems}
-        />
-        <NowPlayingMovies
-          saveMovieinLocalStorage={saveMovieinLocalStorage}
-          openModal={openModal}
-        />
-        <Popular
-          saveMovieinLocalStorage={saveMovieinLocalStorage}
-          storedIds={storedItems}
-          openModal={openModal}
-        />
-      </section>
+      <Routes>
+        <Route path="/" element={<Movies StoredItems={StoredItems} setStoredItems={setStoredItems} />} />
+        <Route path="/favorites" element={<Favorites  moviesStorage={StoredItems} />} />
+      </Routes>
     </>
   );
 };
+
+export const Movies = ({StoredItems, setStoredItems}) => {
+
+  const saveMovieinLocalStorage = (movie) => {
+    if (StoredItems.includes(movie)) {
+      return;
+    } else {
+      setStoredItems([...StoredItems, movie]);
+    }
+  };
+
+  const {
+    IsTyping,
+    closeModal,
+
+    isModalOpen,
+    movieSearch,
+    openModal,
+    selectedMovie,
+  } = useMovie();
+
+  useEffect(() => {
+    localStorage.setItem("moviesIds", JSON.stringify(StoredItems));
+  }, [StoredItems]);
+
+  return (
+    <section>
+      <ModalMovie
+        closeModal={closeModal}
+        isModalOpen={isModalOpen}
+        selectedMovie={selectedMovie}
+        setIsModalOpen={closeModal}
+      />
+      {IsTyping && (
+        <MoviesSearch
+          IsTyping={IsTyping}
+          movieSearched={movieSearch}
+          openModal={openModal}
+        />
+      )}
+      <Trending
+        saveMovieinLocalStorage={saveMovieinLocalStorage}
+        typeTitle={"Tendencias"}
+        openModal={openModal}
+        storedIds={StoredItems}
+      />
+      <NowPlayingMovies
+        saveMovieinLocalStorage={saveMovieinLocalStorage}
+        openModal={openModal}
+      />
+      <Popular
+        saveMovieinLocalStorage={saveMovieinLocalStorage}
+        storedIds={StoredItems}
+        openModal={openModal}
+      />
+    </section>
+  );
+};
+

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
-import { LIST_IMAGES } from "../constants/constantes";
+import { LIST_IMAGES } from "../utils/constants/constantes";
+
 
 export const SearchMovieAndtitle = ({ imageIndex, typing, searchMovie}) => {
   return (

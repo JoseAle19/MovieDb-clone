@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
-import { Switch } from "./Switch";
 // Mocks
 // import moviesType from "../mocks/movies_now_playing.json";
 import { getMovies } from "../services/movies";
-import { ListMovie } from "./ListMovie";
+import { Switch } from "../components";
+import { ListMovie } from "../components/ListMovie";
 
-export const Trending = ({ typeTitle, openModal , saveMovieinLocalStorage, storedIds}) => {
+export const Trending = ({
+  typeTitle,
+  openModal,
+  saveMovieinLocalStorage,
+  storedIds,
+}) => {
   const [today, setToday] = useState(true);
   const [week, setWeek] = useState(false);
   const [movies, setmovies] = useState([]);
@@ -45,7 +50,13 @@ export const Trending = ({ typeTitle, openModal , saveMovieinLocalStorage, store
             />
           </div>
 
-          <ListMovie saveMovieinLocalStorage={saveMovieinLocalStorage} loading={loading} movies={movies} openModal={openModal} storedIds={storedIds}/>
+          <ListMovie
+            saveMovieinLocalStorage={saveMovieinLocalStorage}
+            loading={loading}
+            movies={movies}
+            openModal={openModal}
+            storedIds={storedIds}
+          />
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { ListMovie } from "./ListMovie";
+import { ListMovie } from "../components/ListMovie";
 import { useEffect } from "react";
 import { getMovies } from "../services/movies";
 import { useState } from "react";

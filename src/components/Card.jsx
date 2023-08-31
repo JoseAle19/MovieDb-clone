@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
-import { NO_IMAGE, addPoster } from "../constants/constantes";
+import { NO_IMAGE, addPoster } from "../utils/constants/constantes";
 
 export const Card = ({ profile_path, name, character }) => {
+  console.log(name)
   return (
     <div className="flex flex-col  justify-between w-full h-full">
       <div className="h-1/2">

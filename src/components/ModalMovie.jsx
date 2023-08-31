@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { CardMovieAbout } from "./CardMovieAbout";
 import Modal from "react-modal";
-import { urlVideo } from "../constants/constantes";
+import { urlVideo } from "../utils/constants/constantes";
 import { Card } from "./Card";
 // Importar la libreria de youtube
 export const ModalMovie = ({
@@ -12,7 +12,6 @@ export const ModalMovie = ({
   selectedMovie,
 }) => {
   useEffect(() => {
-    document.body.style.overflow = "scroll-visible";
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
     } else {

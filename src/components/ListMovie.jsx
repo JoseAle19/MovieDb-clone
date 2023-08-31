@@ -8,6 +8,7 @@ export const ListMovie = ({
   saveMovieinLocalStorage,
   storedIds,
 }) => {
+  console.log(storedIds?.includes(movies) )
   return (
     <div className="flex flex-row overflow-x-scroll scroll-visible">
       {!movies.results ? (
@@ -24,7 +25,7 @@ export const ListMovie = ({
               } `}
             >
               <CardMovie
-                color={storedIds?.includes(movie.id) ? "#f34336" : "white"}
+                color={storedIds?.includes(movie) ? "#f34336" : "white"}
                 saveMovieinLocalStorage={saveMovieinLocalStorage}
                 openModal={openModal}
                 movie={movie}

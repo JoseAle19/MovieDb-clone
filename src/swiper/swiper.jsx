@@ -13,7 +13,7 @@ import {
   Autoplay,
   Navigation,
 } from "swiper/modules";
-import { backgroundPoster } from "../constants/constantes";
+import { backgroundPoster } from "../utils/constants/constantes";
 import { useEffect } from "react";
 import { useState } from "react";
 export default function SwiperMovie({ movies, openModal }) {

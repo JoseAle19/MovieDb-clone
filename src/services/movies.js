@@ -1,4 +1,4 @@
-import { options } from "../constants/constantes";
+import { options } from "../utils/constants/constantes";
 
 export const getMovies = async ({ endpoint }) => {
   const response = await fetch(

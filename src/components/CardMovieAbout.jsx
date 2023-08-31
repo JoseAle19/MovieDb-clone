@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { NO_IMAGE, addPoster } from "../constants/constantes";
+import { NO_IMAGE, addPoster } from "../utils/constants/constantes";
 import { ProgressBar } from "./ProgressBar";
 /* eslint-disable react/prop-types */
 // Importar json de peliculas para tener el tipado, solo desarollo

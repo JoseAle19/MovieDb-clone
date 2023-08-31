@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { NO_IMAGE, addPoster } from "../constants/constantes";
+import { NO_IMAGE, addPoster } from "../utils/constants/constantes";
 import { InformationOption } from "./InformationOptions";
 import { ProgressBar } from "./ProgressBar";
 
@@ -23,7 +23,7 @@ export const CardMovie = ({ movie, openModal, saveMovieinLocalStorage,color}) =>
         />
         <span
           onClick={() => {
-            saveMovieinLocalStorage(movie.id);
+            saveMovieinLocalStorage(movie);
           }}
         >
           <InformationOption  color={color} />

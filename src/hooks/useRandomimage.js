@@ -1,6 +1,6 @@
 
 import {useState, useEffect} from 'react'
-import { LIST_IMAGES } from '../constants/constantes';
+import { LIST_IMAGES } from '../utils/constants/constantes';
 export const useRandomimage = () => {
     const [imageIndex, setImageIndex] = useState(0);
 
