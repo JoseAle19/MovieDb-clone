@@ -27,8 +27,12 @@ export const NavBar = ({ isOpen, setIsOpen }) => {
             </span>
           </div>
           <div className="h-full m-5 flex flex-col text-white items-end  text-2xl font-bold">
-            <p className="mt-2 hover:scale-125 duration-300">Peliculas</p>
-            <p className="mt-2 hover:scale-125 duration-300">Favoritos</p>
+            <Link to={"/"}>
+              <p className="mt-2 hover:scale-125 duration-300">Peliculas</p>
+            </Link>
+            <Link to={"/favorites"}>
+              <p className="mt-2 hover:scale-125 duration-300">Favoritos</p>
+            </Link>
             <p className="mt-2 hover:scale-125 duration-300">Ajustes</p>
             <p className="mt-2 hover:scale-125 duration-300">Cuenta</p>
             <p className="mt-2 hover:scale-125 duration-300">Más</p>

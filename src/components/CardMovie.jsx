@@ -1,9 +1,17 @@
 /* eslint-disable react/prop-types */
+import { iconClose } from "../svgs/icons";
 import { NO_IMAGE, addPoster } from "../utils/constants/constantes";
 import { InformationOption } from "./InformationOptions";
 import { ProgressBar } from "./ProgressBar";
 
-export const CardMovie = ({ movie, openModal, saveMovieinLocalStorage,color}) => {
+export const CardMovie = ({
+  movie,
+  openModal,
+  saveMovieinLocalStorage,
+  deleteMovieinLocalStorage,
+  color,
+  fav = false,
+}) => {
   return (
     <div
       key={movie.id}
@@ -21,13 +29,26 @@ export const CardMovie = ({ movie, openModal, saveMovieinLocalStorage,color}) =>
           }`}
           alt={movie.title}
         />
-        <span
-          onClick={() => {
-            saveMovieinLocalStorage(movie);
-          }}
-        >
-          <InformationOption  color={color} />
-        </span>
+        {/* el fav sirve para que valide si es verdader solo aparezca en la pagina de peliculas y no la de favoritos  */}
+        {fav ? (
+          <span
+            onClick={() => {
+              deleteMovieinLocalStorage(movie);
+            }}
+          >
+            <div className="absolute top-0 left-0  w-full flex justify-end ">
+              {iconClose}
+            </div>
+          </span>
+        ) : (
+          <span
+            onClick={() => {
+              saveMovieinLocalStorage(movie);
+            }}
+          >
+            <InformationOption color={color} />
+          </span>
+        )}
         <div className="absolute -bottom-5 left-2">
           <ProgressBar percent={movie.vote_average} />
         </div>

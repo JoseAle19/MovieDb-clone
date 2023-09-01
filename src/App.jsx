@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
+import {createRef, useEffect, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import {
@@ -27,7 +27,16 @@ export const App = () => {
   useEffect(() => {
     document.body.classList.add("scroll-visible");
   }, []);
+  useEffect(() => {
+    localStorage.setItem("moviesIds", JSON.stringify(StoredItems));
+  }, [StoredItems]);
 
+  const deleteMovieinLocalStorage = (movie) => {
+    const moviesFilter = StoredItems.filter(
+      (movieStored) => movieStored.id !== movie.id
+    );
+    setStoredItems(moviesFilter);
+  };
   const { debounceGetMovies, imageIndex, setIsTyping, isOpen, setIsOpen } =
     useMovie();
 
@@ -42,20 +51,33 @@ export const App = () => {
         />
       </main>
       <Routes>
-        <Route path="/" element={<Movies StoredItems={StoredItems} setStoredItems={setStoredItems} />} />
-        <Route path="/favorites" element={<Favorites  moviesStorage={StoredItems} />} />
+        <Route
+          path="/"
+          element={
+            <Movies StoredItems={StoredItems} setStoredItems={setStoredItems} />
+          }
+        />
+        <Route
+          path="/favorites"
+          element={
+            <Favorites
+              moviesStorage={StoredItems}
+              deleteMovieinLocalStorage={deleteMovieinLocalStorage}
+            />
+          }
+        />
       </Routes>
     </>
   );
 };
 
-export const Movies = ({StoredItems, setStoredItems}) => {
-
+export const Movies = ({ StoredItems, setStoredItems }) => {
   const saveMovieinLocalStorage = (movie) => {
-    if (StoredItems.includes(movie)) {
-      return;
+    if (StoredItems.find((movieStored) => movieStored.id == movie.id)) {
+      return StoredItems;
     } else {
-      setStoredItems([...StoredItems, movie]);
+      const {id,poster_path, overview, vote_average, title} = movie
+      setStoredItems([...StoredItems, {id, poster_path, overview, vote_average, title, itemRef: createRef(null)}]);
     }
   };
 
@@ -68,10 +90,6 @@ export const Movies = ({StoredItems, setStoredItems}) => {
     openModal,
     selectedMovie,
   } = useMovie();
-
-  useEffect(() => {
-    localStorage.setItem("moviesIds", JSON.stringify(StoredItems));
-  }, [StoredItems]);
 
   return (
     <section>
@@ -106,4 +124,3 @@ export const Movies = ({StoredItems, setStoredItems}) => {
     </section>
   );
 };
-

@@ -1,28 +1,45 @@
-/* eslint-disable no-unused-vars */
-import {  CardMovie } from "../components";
-import Movies from "../mocks/movies_top.json";
+/* eslint-disable react/prop-types */
+import { CardMovie } from "../components";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
-export const Favorites = ({moviesStorage}) => {
+import "../App.css";
+export const Favorites = ({
+  moviesStorage,
+  deleteMovieinLocalStorage = { deleteMovieinLocalStorage },
+}) => {
   return (
     <main className="m-4">
       <div>
-        <h1 className="text-white text-2xl font-bold text-center gradient-text ">
+        <h1 className="text-white text-2xl font-bold text-center gradient-text">
           Favoritos
         </h1>
-        <div className="grid grid-cols-2 gap-5 mt-5 ">
-          {moviesStorage.map((movie) => {
+        <TransitionGroup>
+          {moviesStorage.map((movie, index) => {
             return (
-              <div key={movie.id} className="flex gap-6 ">
-                <div>
-                  <CardMovie movie={movie} />
+              <CSSTransition
+                key={movie.id + index}
+                // nodeRef={movie.itemRef}
+                timeout={1000}
+                classNames="fade"
+              >
+                <div className="flex gap-6 bg-black/30 mt-2  ">
+                  <div>
+                    <CardMovie
+                      deleteMovieinLocalStorage={deleteMovieinLocalStorage}
+                      movie={movie}
+                      fav={true}
+                    />
+                  </div>
+                  <div className="">
+                    <p className="text-white font-bold  text-sm line-clamp-[10]  ">
+                      {movie.overview}
+                    </p>
+                  </div>
                 </div>
-                <div className="">
-                    <p className="text-white font-bold  text-sm" >{movie.overview}</p>
-                </div>
-              </div>
+              </CSSTransition>
             );
           })}
-        </div>
+        </TransitionGroup>
       </div>
     </main>
   );
