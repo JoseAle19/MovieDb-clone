@@ -7,7 +7,7 @@ export const NowPlayingMovies = ({ openModal }) => {
   useEffect(() => {
     (async () => {
       const data = await getMovies({
-        endpoint: "movie/now_playing?language=es-ES&page=1",
+        endpoint: "movie/upcoming?language=es-ES&page=1",
       });
       setMovies(data);
     })();
