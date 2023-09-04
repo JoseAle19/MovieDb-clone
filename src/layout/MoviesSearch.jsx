@@ -3,11 +3,16 @@ import { ListMovie } from "../components/ListMovie";
 import { useEffect } from "react";
 import { getMovies } from "../services/movies";
 import { useState } from "react";
-export const MoviesSearch = ({ IsTyping, movieSearched,openModal }) => {
- 
+export const MoviesSearch = ({
+  IsTyping,
+  movieSearched,
+  openModal,
+  saveMovieinLocalStorage,
+  storedIds
+}) => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
-      getMovies({
+    getMovies({
       endpoint: `search/movie?query=${movieSearched}&include_adult=false&language=es-ES&page=1`,
     }).then((searchMovies) => setMovies(searchMovies));
   }, [movieSearched]);
@@ -24,7 +29,14 @@ export const MoviesSearch = ({ IsTyping, movieSearched,openModal }) => {
           Pelicula: {movieSearched}
         </p>
       </div>
-      <ListMovie loading={true} movies={movies} openModal={openModal} />
+      <ListMovie
+        loading={true}
+        movies={movies}
+        storedIds={storedIds}
+
+        openModal={openModal}
+        saveMovieinLocalStorage={saveMovieinLocalStorage}
+      />
     </div>
   );
 };

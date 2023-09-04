@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import {createRef, useEffect, useState } from "react";
+import { createRef, useEffect, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import {
@@ -37,8 +37,15 @@ export const App = () => {
     );
     setStoredItems(moviesFilter);
   };
-  const { debounceGetMovies, imageIndex, setIsTyping, isOpen, setIsOpen } =
-    useMovie();
+  const {
+    debounceGetMovies,
+    imageIndex,
+    setIsTyping,
+    IsTyping,
+    isOpen,
+    setIsOpen,
+    movieSearch,
+  } = useMovie();
 
   return (
     <>
@@ -54,7 +61,12 @@ export const App = () => {
         <Route
           path="/"
           element={
-            <Movies StoredItems={StoredItems} setStoredItems={setStoredItems} />
+            <Movies
+              movieSearch={movieSearch}
+              IsTyping={IsTyping}
+              StoredItems={StoredItems}
+              setStoredItems={setStoredItems}
+            />
           }
         />
         <Route
@@ -71,22 +83,36 @@ export const App = () => {
   );
 };
 
-export const Movies = ({ StoredItems, setStoredItems }) => {
+export const Movies = ({
+  StoredItems,
+  setStoredItems,
+  IsTyping,
+  movieSearch,
+}) => {
   const saveMovieinLocalStorage = (movie) => {
     if (StoredItems.find((movieStored) => movieStored.id == movie.id)) {
       return StoredItems;
     } else {
-      const {id,poster_path, overview, vote_average, title} = movie
-      setStoredItems([...StoredItems, {id, poster_path, overview, vote_average, title, itemRef: createRef(null)}]);
+      const { id, poster_path, overview, vote_average, title } = movie;
+      setStoredItems([
+        ...StoredItems,
+        {
+          id,
+          poster_path,
+          overview,
+          vote_average,
+          title,
+          itemRef: createRef(null),
+        },
+      ]);
     }
   };
 
   const {
-    IsTyping,
     closeModal,
 
     isModalOpen,
-    movieSearch,
+
     openModal,
     selectedMovie,
   } = useMovie();
@@ -101,6 +127,8 @@ export const Movies = ({ StoredItems, setStoredItems }) => {
       />
       {IsTyping && (
         <MoviesSearch
+          saveMovieinLocalStorage={saveMovieinLocalStorage}
+          storedIds={StoredItems}
           IsTyping={IsTyping}
           movieSearched={movieSearch}
           openModal={openModal}
